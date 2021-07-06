@@ -1,0 +1,13 @@
+[Unit]
+Description=localhost.run
+StartLimitInterval=3700
+StartLimitBurst=60
+
+[Service]
+Restart=always
+RestartSec=60
+User=ubuntu
+ExecStart=/usr/local/bin/localhost.run
+
+[Install]
+WantedBy=multi-user.target

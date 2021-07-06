@@ -1,0 +1,7 @@
+#!/bin/bash
+while ! ping -c1 www.google.com 1>/dev/null 2>&1 ; do
+    echo "waiting for internet"
+    sleep 1
+done
+echo "internet is reachable"
+/usr/bin/ssh -o StrictHostKeyChecking=accept-new -R quehl.xyz:443:localhost:443 plan@localhost.run
