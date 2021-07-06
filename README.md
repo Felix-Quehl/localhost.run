@@ -1,15 +1,25 @@
-# Expose to the internet
+# localhost.run on boot
 
-I exposing the service though `localhost.me` by port-forwarding.  
+I have a web-server running which is exposed though [localhost.run](http://localhost.run).
 See [setup instruction on their website](http://localhost.run/docs/custom-domains/) on how to setup.
+To do the remote-port forwarding automatically after booting i created a systemd service running a script.
 
-To not have the need to manually keep the ssh tunnel open i configured a service.
-Service installation:
+## Configure Remote Target
+
+Beside from configuring your domain you have to change the remote forwarding target (host/domain and ports) in the script `files/localhost.run`.
+
+## Installation
+
+To install and active the service just all the install script.
 
 ```bash
-cd ./ssh-tunnel
 sudo ./install.sh
+```
 
-# also adds a terminal command (cd out of ./ssh-tunnel before using)
+### Console Command
+
+You can also use the script as a command right from the terminal (cd out of this repo before that).
+
+```bash
 localhost.run
 ```
