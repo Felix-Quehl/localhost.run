@@ -1,7 +1,7 @@
 # localhost.run on boot
 
-*This tool is a side product of me creating my own website.  
-This is nothing sophisticated. [Read the story here.](https://quehl.xyz/0_about.html)*   
+*This tool got written while i was creating my own website.  
+[Read the story here.](https://quehl.xyz/0_about.html)*   
 
 I have a web-server running which is exposed though [localhost.run](http://localhost.run).
 See [setup instruction on their website](http://localhost.run/docs/custom-domains/) on how to setup.
