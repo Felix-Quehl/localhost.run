@@ -9,7 +9,7 @@ To do the remote-port forwarding automatically after booting i created a systemd
 
 ## Configure Remote Target
 
-Beside from configuring your domain you have to change the remote forwarding target (host/domain and ports) in the script `files/localhost.run`.
+Beside from configuring your domain you have to change the remote forwarding target (host/domain and ports) in the script [`files/localhost.run`](https://github.com/Felix-Quehl/localhost.run/blob/main/files/localhost.run#L7).
 Please also take a look at the service definition in [`files/localhost.run.service`](https://github.com/Felix-Quehl/localhost.run/blob/main/files/localhost.run.service#L9) to check for correct user used. 
 
 ## Installation
